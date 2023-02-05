@@ -7,7 +7,7 @@ resource "aws_key_pair" "IRAJ_KEY" {
 resource "aws_instance" "example" {
   for_each               = var.EC2_DEPLOYMENTS
   ami                    = lookup(var.AMIS, each.value.AWS_REGION, "") # last parameter is the default value
-  instance_type          = each.value.INSTANCE_TYPE
+  instance_type          = each.value.INSTANCE_TYPE 
   key_name               = aws_key_pair.IRAJ_KEY.key_name
   vpc_security_group_ids = [aws_security_group.sg.id]
   user_data              = file("script.sh")
@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
   }
   depends_on = [
     aws_security_group.sg
-  ]
+  ] 
   # provisioner "file" {
   #   source      = "script.sh"
   #   destination = "/tmp/script.sh"

@@ -28,6 +28,7 @@ variable "AMIS" {
   }
 
 }
+
 variable "PATH_TO_PRIVATE_KEY" {}
 variable "INSTANCE_USERNAME" {}
 variable "AWS_ACCESS_KEY" {}
