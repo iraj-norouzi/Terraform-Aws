@@ -9,10 +9,6 @@ variable "EC2_DEPLOYMENTS" {
       "AWS_REGION"    = "us-east-1"
       "INSTANCE_TYPE" = "t2.micro"
     }
-    # "backend" = {
-    #   "region" = "us-east-1"
-    #   "instance_type" = "t2.micro"
-    # }
   }
 }
 variable "AMIS" {
