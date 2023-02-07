@@ -11,12 +11,8 @@ provider "aws" {
 
 
 resource "aws_instance" "example" {
-  for_each = var.EC2_DEPLOYMENTS
-  provider = aws.us-west-1
-  # provider = each.value.PROVIDER_AWS
-  # provider = aws."${each.value.PROVIDER_AWS}"
-  # provider = lookup("PROVIDER_AWS", aws.west, "")
-  # ami = lookup(var.AMIS, each.value.AWS_REGION, "") # last parameter is the default value
+  for_each               = var.EC2_DEPLOYMENTS
+  provider               = aws.us-west-1
   ami                    = data.aws_ami.amazon-linux-2.id
   instance_type          = each.value.INSTANCE_TYPE
   key_name               = aws_key_pair.IRAJ_KEY.key_name
