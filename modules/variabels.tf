@@ -6,3 +6,4 @@ variable "PUBLIC_KEY" {}
 variable "INSTANCE_USERNAME" {}
 variable "PATH_TO_PRIVATE_KEY" {}
 variable "EC2_DEPLOYMENTS" {}
+# variable "REGIONS" {}

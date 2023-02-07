@@ -1,16 +1,20 @@
+
 variable "EC2_DEPLOYMENTS" {
   type = map(any)
   default = {
     "web" = {
-      "AWS_REGION"    = "us-east-1"
-      "INSTANCE_TYPE" = "t2.micro"
+      AWS_REGION    = "us-east-1"
+      INSTANCE_TYPE = "t2.micro"
+      PROVIDER_AWS  = "aws.west"
     },
     "app" = {
-      "AWS_REGION"    = "us-east-1"
-      "INSTANCE_TYPE" = "t2.micro"
+      AWS_REGION    = "us-east-1"
+      INSTANCE_TYPE = "t2.micro"
+      PROVIDER_AWS  = "aws.london"
     }
   }
 }
+
 variable "AMIS" {
   description = "Ami in diffrente Region"
   type        = map(string)
