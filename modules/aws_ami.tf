@@ -1,5 +1,5 @@
 data "aws_ami" "amazon-linux-2" {
-  provider    = aws.us-west-1
+  provider    = aws.us-east-1
   most_recent = true
   filter {
     name   = "owner-alias"

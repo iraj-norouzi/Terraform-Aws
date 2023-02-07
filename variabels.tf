@@ -5,12 +5,10 @@ variable "EC2_DEPLOYMENTS" {
     "web" = {
       AWS_REGION    = "us-east-1"
       INSTANCE_TYPE = "t2.micro"
-      PROVIDER_AWS  = "aws.west"
     },
     "app" = {
       AWS_REGION    = "us-east-1"
       INSTANCE_TYPE = "t2.micro"
-      PROVIDER_AWS  = "aws.london"
     }
   }
 }
