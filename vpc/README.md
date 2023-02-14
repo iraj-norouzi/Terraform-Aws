@@ -8,7 +8,7 @@ terraform validate
 terraform plan
 
 # Terraform Apply
-terraform apply -auto-approve
+terraform apply 
 Observation:
 1) Verify VPC
 2) Verify Subnets
