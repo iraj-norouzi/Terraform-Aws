@@ -84,6 +84,19 @@ variable "business_divsion" {
   default     = "DevOps"
 }
 
+#Instance Type
+variable "instance_type" {
+  description = "Instance TYPE"
+  type        = string
+  default     = "t2.micro"
+
+}
+# AWS EC2 Instance Key Pair
+# variable "instance_keypair" {
+#   description = "AWS EC2 Key pair that need to be associated with EC2 Instance"
+#   type        = string
+#   default     = "irajj"
+# }
 
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
