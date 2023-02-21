@@ -14,13 +14,6 @@ variable "vpc_cidr_block" {
   default     = "10.0.0.0/16"
 }
 
-# VPC Availability Zones
-# variable "vpc_availability_zones" {
-#   description = "VPC Availability Zones"
-#   type = list(string)
-#   default = ["us-east-1a", "us-east-1b"]
-# }
-
 # VPC Public Subnets
 variable "vpc_public_subnets" {
   description = "VPC Public Subnets"
@@ -91,13 +84,6 @@ variable "instance_type" {
   default     = "t2.micro"
 
 }
-# AWS EC2 Instance Key Pair
-# variable "instance_keypair" {
-#   description = "AWS EC2 Key pair that need to be associated with EC2 Instance"
-#   type        = string
-#   default     = "irajj"
-# }
-
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
 variable "PUBLIC_KEY" {}

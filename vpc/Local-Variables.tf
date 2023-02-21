@@ -1,6 +1,5 @@
 # Define Local Values in Terraform
 locals {
-  # name   = "ex-${replace(basename(path.cwd), "_", "-")}"
   owners      = var.business_divsion
   environment = var.environment
 
