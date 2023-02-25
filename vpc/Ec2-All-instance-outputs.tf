@@ -13,13 +13,3 @@ output "ec2_bastion_public_ip" {
   value       = module.ec2_instance_bastion.public_ip
 }
 
-# EC2 Multiple
-output "ec2_instance_bastion" {
-  description = "The full output of the `ec2_module` module"
-  value       = module.ec2_instance_bastion
-}
-# EC2 Multiple
-output "ec2_multiple" {
-  description = "The full output of the `ec2_module` module"
-  value       = module.ec2_private
-}
